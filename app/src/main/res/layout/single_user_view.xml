@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:common="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.cashkaro.CommonModules.CommonFontsTextview
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SoneValley"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_10sdp"
+            common:font="GorditaRegular.otf" />
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8899772233"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sonevalleyblog@gmail.com"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCreatedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2015-07-02 20:33:12"
+            android:visibility="gone" />
+
+        <com.cashkaro.CommonModules.CommonFontsButton
+            android:id="@+id/open_btn"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="#000000"
+            android:textSize="@dimen/_8sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Activate Rewards"
+            common:font="GorditaRegular.otf"
+            android:textColor="@color/white" />
+
+        <com.cashkaro.CommonModules.CommonFontsTextview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            common:font="GorditaLight.otf"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="View all Offers (13)"
+            />
+    </LinearLayout>
+</LinearLayout>

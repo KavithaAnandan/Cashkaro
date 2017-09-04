@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:common="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="#bcf4af"
+    android:orientation="vertical"
+    android:layout_weight="6"
+    android:paddingTop="48dp">
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/coupans_icon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <com.cashkaro.CommonModules.CommonFontsTextview
+        android:id="@+id/screen_heading"
+        android:text="Get Paid!"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:textColor="@color/cash_back"
+        android:paddingLeft="24dp"
+        common:font="GorditaBold.otf"
+        android:paddingRight="24dp"
+        android:gravity="bottom|center_horizontal" />
+
+    <com.cashkaro.CommonModules.CommonFontsTextview
+        android:id="@+id/screen_desc"
+        android:text="Collect Rs 250 Confirmed Cashback &amp; transfer to your Bank Account as Real Cash, or redeem as Gift Vouchers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textColor="@color/cash_back"
+        common:font="GorditaBold.otf"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:gravity="top|center_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

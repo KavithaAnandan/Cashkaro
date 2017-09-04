@@ -15,13 +15,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.cashkaro.CommonModules.TinyDB;
 import com.cashkaro.R;
 import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
 
 import java.util.ArrayList;
@@ -50,12 +48,9 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View parentView = inflater.inflate(R.layout.home_fragment, container, false);
 
-
         carouselView = (CarouselView) parentView.findViewById(R.id.carouselView);
         recycler_view_home = (RecyclerView) parentView.findViewById(R.id._view_home);
-
         setUpViews(parentView);
-
 
         return parentView;
     }
@@ -65,12 +60,12 @@ public class HomeFragment extends Fragment {
 
         carouselView.setPageCount(sampleImages.length);
         carouselView.setImageListener(imageListener);
-        carouselView.setImageClickListener(new ImageClickListener() {
-            @Override
-            public void onClick(int position) {
-                Toast.makeText(getActivity(), "Clicked item: " + position, Toast.LENGTH_SHORT).show();
-            }
-        });
+//        carouselView.setImageClickListener(new ImageClickListener() {
+//            @Override
+//            public void onClick(int position) {
+//                Toast.makeText(getActivity(), "Clicked item: " + position, Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         setRecyclerViewData();
 
